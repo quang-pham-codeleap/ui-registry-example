@@ -1,0 +1,17 @@
+/* Monaco Editor custom styling */
+
+/* Add a vertical line between line numbers and code content */
+.monaco-editor .margin {
+  background-color: var(--background) !important;
+  border-right: 1px solid var(--border);
+}
+
+/* Adjust padding for the editor content */
+.monaco-editor .lines-content {
+  padding-left: 8px;
+}
+
+.monaco-editor,
+.monaco-editor-background {
+  background-color: var(--background) !important;
+}
