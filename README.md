@@ -1,73 +1,39 @@
-# React + TypeScript + Vite
+# JTL Component Library Sample
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository is a sample application for the JTL component library distributed through the shadcn registry. It demonstrates how the library can be consumed in a real React application while keeping the developer experience close to the standard shadcn workflow.
 
-Currently, two official plugins are available:
+The component library itself lives in the JTL Platform UI React branch here: [jtl-platform-ui-react/tree/agents/migrate-library-to-shadcn-registry](https://github.com/jtl-software/jtl-platform-ui-react/tree/agents/migrate-library-to-shadcn-registry).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Why This Exists
 
-## React Compiler
+The goal of this sample is to show that the JTL design system can be shipped and installed like any other shadcn registry package, without losing the structure and conventions that teams already expect from the shadcn ecosystem.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## JTL vs Shadcn
 
-## Expanding the ESLint configuration
+| Topic | JTL component library | Shadcn UI |
+| --- | --- | --- |
+| Distribution | Published through the shadcn registry | Installed from shadcn registry or added manually |
+| Design language | JTL-branded components and patterns | Neutral starter primitives |
+| Purpose | Production-ready internal component system | Flexible base for building your own system |
+| Import style | Consistent library-owned components | Copy-into-project component model |
+| Best fit | Teams that want a shared UI standard | Teams that want maximum control over component source |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## What You Can Explore
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- JTL components imported from the registry
+- Page-level examples that show how the system fits together
+- Local conventions and compatibility notes for generated shadcn files
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Getting Started
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Install dependencies and start the app with the usual Vite workflow:
+
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Notes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- This project intentionally includes both JTL components and standard shadcn-style components for comparison.
+- Generated registry files may need small path corrections to match the import conventions used in this repository.
