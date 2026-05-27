@@ -33,6 +33,12 @@ npm install
 npm run dev
 ```
 
+## GitHub Pages Deployment
+
+The repository includes a GitHub Actions workflow that builds the app and deploys it to GitHub Pages on pushes to `main`.
+
+To make the site available only to JTL Software GitHub accounts, set the Pages visibility in repository settings to the private/internal option available for your organization, then select `GitHub Actions` as the publish source.
+
 ## Notes
 
 - This project intentionally includes both JTL components and standard shadcn-style components for comparison.

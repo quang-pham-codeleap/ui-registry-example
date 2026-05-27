@@ -9,7 +9,7 @@ import ComponentsPage from './pages/ComponentsPage'
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <div className="flex h-screen overflow-hidden bg-[var(--muted)]">
         <Sidebar />
         <main className="flex-1 overflow-y-auto">
