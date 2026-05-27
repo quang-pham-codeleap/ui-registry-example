@@ -5,7 +5,7 @@ import path from 'node:path'
 
 // https://vite.dev/config/
 export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/shadcn-registry-sample/' : '/',
+  base: command === 'build' ? '/poc-prototype-shadcn-registry-ui/' : '/',
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
