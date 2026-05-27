@@ -142,7 +142,7 @@ export default function useHtmlEditor({ initialContent, onContentChange, initial
             target: '_blank',
           },
         },
-      }),
+      }) as any,
       // Custom mark for font-size inline styling.
       FontSizeExtension,
       // Custom marks for foreground and background color inline styling.
