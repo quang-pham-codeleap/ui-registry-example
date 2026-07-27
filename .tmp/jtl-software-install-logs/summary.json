@@ -1,0 +1,327 @@
+{
+  "attempted": 46,
+  "success": 4,
+  "failed": 42,
+  "failedNames": [
+    "accordion",
+    "alert",
+    "alert-dialog",
+    "avatar",
+    "badge",
+    "breadcrumb",
+    "button-group",
+    "calendar",
+    "chart",
+    "checkbox",
+    "collapsible",
+    "combobox",
+    "command",
+    "context-menu",
+    "dialog",
+    "dropdown-menu",
+    "field",
+    "hover-card",
+    "input-group",
+    "input-otp",
+    "kbd",
+    "label",
+    "menubar",
+    "navigation-menu",
+    "pagination",
+    "popover",
+    "progress",
+    "radio-group",
+    "scroll-area",
+    "separator",
+    "sheet",
+    "sidebar",
+    "skeleton",
+    "slider",
+    "sonner",
+    "switch",
+    "table",
+    "tabs",
+    "textarea",
+    "toggle",
+    "toggle-group",
+    "tooltip"
+  ],
+  "results": [
+    {
+      "name": "accordion",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/accordion.log"
+    },
+    {
+      "name": "alert",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/alert.log"
+    },
+    {
+      "name": "alert-dialog",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/alert-dialog.log"
+    },
+    {
+      "name": "avatar",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/avatar.log"
+    },
+    {
+      "name": "badge",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/badge.log"
+    },
+    {
+      "name": "breadcrumb",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/breadcrumb.log"
+    },
+    {
+      "name": "button",
+      "ok": true,
+      "exitCode": 0,
+      "logPath": ".tmp/jtl-software-install-logs/button.log"
+    },
+    {
+      "name": "button-group",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/button-group.log"
+    },
+    {
+      "name": "calendar",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/calendar.log"
+    },
+    {
+      "name": "card",
+      "ok": true,
+      "exitCode": 0,
+      "logPath": ".tmp/jtl-software-install-logs/card.log"
+    },
+    {
+      "name": "chart",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/chart.log"
+    },
+    {
+      "name": "checkbox",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/checkbox.log"
+    },
+    {
+      "name": "collapsible",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/collapsible.log"
+    },
+    {
+      "name": "combobox",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/combobox.log"
+    },
+    {
+      "name": "command",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/command.log"
+    },
+    {
+      "name": "context-menu",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/context-menu.log"
+    },
+    {
+      "name": "dialog",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/dialog.log"
+    },
+    {
+      "name": "dropdown-menu",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/dropdown-menu.log"
+    },
+    {
+      "name": "field",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/field.log"
+    },
+    {
+      "name": "hover-card",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/hover-card.log"
+    },
+    {
+      "name": "input",
+      "ok": true,
+      "exitCode": 0,
+      "logPath": ".tmp/jtl-software-install-logs/input.log"
+    },
+    {
+      "name": "input-group",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/input-group.log"
+    },
+    {
+      "name": "input-otp",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/input-otp.log"
+    },
+    {
+      "name": "kbd",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/kbd.log"
+    },
+    {
+      "name": "label",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/label.log"
+    },
+    {
+      "name": "menubar",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/menubar.log"
+    },
+    {
+      "name": "navigation-menu",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/navigation-menu.log"
+    },
+    {
+      "name": "pagination",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/pagination.log"
+    },
+    {
+      "name": "popover",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/popover.log"
+    },
+    {
+      "name": "progress",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/progress.log"
+    },
+    {
+      "name": "radio-group",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/radio-group.log"
+    },
+    {
+      "name": "scroll-area",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/scroll-area.log"
+    },
+    {
+      "name": "select",
+      "ok": true,
+      "exitCode": 0,
+      "logPath": ".tmp/jtl-software-install-logs/select.log"
+    },
+    {
+      "name": "separator",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/separator.log"
+    },
+    {
+      "name": "sheet",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/sheet.log"
+    },
+    {
+      "name": "sidebar",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/sidebar.log"
+    },
+    {
+      "name": "skeleton",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/skeleton.log"
+    },
+    {
+      "name": "slider",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/slider.log"
+    },
+    {
+      "name": "sonner",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/sonner.log"
+    },
+    {
+      "name": "switch",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/switch.log"
+    },
+    {
+      "name": "table",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/table.log"
+    },
+    {
+      "name": "tabs",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/tabs.log"
+    },
+    {
+      "name": "textarea",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/textarea.log"
+    },
+    {
+      "name": "toggle",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/toggle.log"
+    },
+    {
+      "name": "toggle-group",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/toggle-group.log"
+    },
+    {
+      "name": "tooltip",
+      "ok": false,
+      "exitCode": 1,
+      "logPath": ".tmp/jtl-software-install-logs/tooltip.log"
+    }
+  ]
+}

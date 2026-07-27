@@ -1,10 +1,13 @@
-import { ArrayPath, FieldValues, useFieldArray, FieldArray, FieldArrayMethodProps } from 'react-hook-form';
-import IFieldArrayInnerProps from './IFieldArrayInnerProps';
-import { useCallback } from 'react';
-import { Box } from '../../../box';
-import { cn } from '@/lib';
+import { ArrayPath, FieldValues, useFieldArray } from "react-hook-form";
+import IFieldArrayInnerProps from "./IFieldArrayInnerProps";
+import { useCallback } from "react";
+import { Box } from "../../../box";
+import { cn } from "@/lib";
 
-const FieldArrayInner = <TFieldValues extends FieldValues = FieldValues, TName extends ArrayPath<TFieldValues> = ArrayPath<TFieldValues>>({
+const FieldArrayInner = <
+  TFieldValues extends FieldValues = FieldValues,
+  TName extends ArrayPath<TFieldValues> = ArrayPath<TFieldValues>,
+>({
   name,
   control,
   children,
@@ -14,10 +17,25 @@ const FieldArrayInner = <TFieldValues extends FieldValues = FieldValues, TName e
   disabled = false,
 }: IFieldArrayInnerProps<TFieldValues, TName>) => {
   // useFieldArray is now safe — control is always defined here
-  const { fields, append, prepend, remove, swap, move, insert, update, replace } = useFieldArray({
+  const {
+    fields,
+    append,
+    prepend,
+    remove,
+    swap,
+    move,
+    insert,
+    update,
+    replace,
+  } = useFieldArray({
     control,
     name,
   });
+
+  type AppendValue = Parameters<typeof append>[0];
+  type AppendOptions = Parameters<typeof append>[1];
+  type InsertValue = Parameters<typeof insert>[1];
+  type InsertOptions = Parameters<typeof insert>[2];
 
   /**
    * Wrap append with max validation.
@@ -27,7 +45,7 @@ const FieldArrayInner = <TFieldValues extends FieldValues = FieldValues, TName e
    * @param options - RHF focus options forwarded to `append`
    */
   const handleAppend = useCallback(
-    (value?: FieldArray<TFieldValues, TName> | FieldArray<TFieldValues, TName>[], options?: FieldArrayMethodProps) => {
+    (value?: AppendValue, options?: AppendOptions) => {
       const data = value ?? defaultValue;
       // Account for batch adds — data can be an array of items
       const addCount = Array.isArray(data) ? data.length : 1;
@@ -47,7 +65,7 @@ const FieldArrayInner = <TFieldValues extends FieldValues = FieldValues, TName e
    * @param value - Value to prepend to array
    */
   const handlePrepend = useCallback(
-    (value?: FieldArray<TFieldValues, TName> | FieldArray<TFieldValues, TName>[]) => {
+    (value?: AppendValue) => {
       const data = value ?? defaultValue;
       // Account for batch adds — data can be an array of items
       const addCount = Array.isArray(data) ? data.length : 1;
@@ -91,7 +109,7 @@ const FieldArrayInner = <TFieldValues extends FieldValues = FieldValues, TName e
    * @param options - RHF focus options forwarded to `insert`
    */
   const handleInsert = useCallback(
-    (index: number, value?: FieldArray<TFieldValues, TName> | FieldArray<TFieldValues, TName>[], options?: FieldArrayMethodProps) => {
+    (index: number, value?: InsertValue, options?: InsertOptions) => {
       const data = value ?? defaultValue;
       // Account for batch inserts — data can be an array of items
       const addCount = Array.isArray(data) ? data.length : 1;
@@ -108,7 +126,12 @@ const FieldArrayInner = <TFieldValues extends FieldValues = FieldValues, TName e
   );
 
   return (
-    <Box className={cn('flex flex-col gap-4', disabled && 'pointer-events-none opacity-50')}>
+    <Box
+      className={cn(
+        "flex flex-col gap-4",
+        disabled && "pointer-events-none opacity-50",
+      )}
+    >
       {/* Render children with field array utilities */}
       {children({
         fields,

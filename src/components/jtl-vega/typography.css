@@ -1,0 +1,163 @@
+/* JTL theme — typography tokens
+ *
+ * Font family, the base size scale, and the per-component (`h1`–`h4`, `p`,
+ * `lead`, `large`, `small`, `inline-code`) type tokens. These resolve against
+ * the primitive scales in tokens/primitives.css.
+ */
+@layer base {
+    :root {
+        /* ── Font family ──────────────────────────────────────────────── */
+        --typography-font-family-font-sans:
+            "Inter Variable", ui-sans-serif, system-ui, -apple-system,
+            BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+            "Noto Sans", sans-serif;
+
+        /* ── Base size scale ──────────────────────────────────────────── */
+        --typography-base-sizes-extra-small-font-size: var(--font-size-text-xs);
+        --typography-base-sizes-extra-small-line-height: var(
+            --font-line-height-leading-4
+        );
+        --typography-base-sizes-small-font-size: var(--font-size-text-sm);
+        --typography-base-sizes-small-line-height: var(
+            --font-line-height-leading-5
+        );
+        --typography-base-sizes-default-font-size: var(--font-size-text-base);
+        --typography-base-sizes-base-font-size: var(--font-size-text-base);
+        --typography-base-sizes-base-line-height: var(
+            --font-line-height-leading-6
+        );
+        --typography-base-sizes-medium-font-size: var(--font-size-text-lg);
+        --typography-base-sizes-large-font-size: var(--font-size-text-xl);
+        --typography-base-sizes-3x-large-font-size: var(--font-size-text-3xl);
+        --typography-base-sizes-5x-large-line-height: var(
+            --font-line-height-leading-10
+        );
+
+        /* ── Component typography ─────────────────────────────────────── */
+        /* h1 */
+        --typography-typography-components-h1-font-size-lg: var(
+            --font-size-text-4xl
+        );
+        --typography-typography-components-h1-font-weight: var(
+            --font-weight-extrabold
+        );
+        --typography-typography-components-h1-letter-spacing: var(
+            --font-letter-spacing-tight
+        );
+
+        /* h2 */
+        --typography-typography-components-h2-font-size: var(
+            --font-size-text-3xl
+        );
+        --typography-typography-components-h2-font-weight: var(
+            --font-weight-bold
+        );
+        --typography-typography-components-h2-line-height: var(
+            --font-line-height-leading-9
+        );
+        --typography-typography-components-h2-letter-spacing: var(
+            --font-letter-spacing-tight
+        );
+
+        /* h3 */
+        --typography-typography-components-h3-font-size: var(
+            --font-size-text-2xl
+        );
+        --typography-typography-components-h3-font-weight: var(
+            --font-weight-bold
+        );
+        --typography-typography-components-h3-line-height: var(
+            --font-line-height-leading-8
+        );
+        --typography-typography-components-h3-letter-spacing: var(
+            --font-letter-spacing-tight
+        );
+
+        /* h4 */
+        --typography-typography-components-h4-font-size: var(
+            --font-size-text-xl
+        );
+        --typography-typography-components-h4-font-weight: var(
+            --font-weight-semibold
+        );
+        --typography-typography-components-h4-line-height: var(
+            --font-line-height-leading-7
+        );
+        --typography-typography-components-h4-letter-spacing: var(
+            --font-letter-spacing-tight
+        );
+
+        /* paragraph */
+        --typography-typography-components-p-font-size: var(
+            --font-size-text-base
+        );
+        --typography-typography-components-p-font-weight: var(
+            --font-weight-normal
+        );
+        --typography-typography-components-p-line-height: var(
+            --font-line-height-leading-7
+        );
+        --typography-typography-components-p-letter-spacing: var(
+            --font-letter-spacing-normal
+        );
+
+        /* lead */
+        --typography-typography-components-lead-font-size: var(
+            --font-size-text-xl
+        );
+        --typography-typography-components-lead-font-weight: var(
+            --font-weight-normal
+        );
+        --typography-typography-components-lead-line-height: var(
+            --font-line-height-leading-7
+        );
+        --typography-typography-components-lead-letter-spacing: var(
+            --font-letter-spacing-normal
+        );
+
+        /* large */
+        --typography-typography-components-large-font-size: var(
+            --font-size-text-lg
+        );
+        --typography-typography-components-large-font-weight: var(
+            --font-weight-semibold
+        );
+        --typography-typography-components-large-line-height: var(
+            --font-line-height-leading-7
+        );
+        --typography-typography-components-large-letter-spacing: var(
+            --font-letter-spacing-normal
+        );
+
+        /* small */
+        --typography-typography-components-small-font-size: var(
+            --font-size-text-sm
+        );
+        --typography-typography-components-small-font-weight: var(
+            --font-weight-medium
+        );
+        --typography-typography-components-small-line-height: var(
+            --font-line-height-leading-5
+        );
+        --typography-typography-components-small-letter-spacing: var(
+            --font-letter-spacing-normal
+        );
+
+        /* inline-code */
+        --typography-typography-components-inline-code-font-family:
+            ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+            "Liberation Mono", "Courier New", monospace;
+        --typography-typography-components-inline-code-font-size: var(
+            --font-size-text-sm
+        );
+        --typography-typography-components-inline-code-font-weight: var(
+            --font-weight-semibold
+        );
+        --typography-typography-components-inline-code-line-height: var(
+            --font-line-height-leading-5
+        );
+        --typography-typography-components-inline-code-letter-spacing: var(
+            --font-letter-spacing-tight
+        );
+    }
+}
