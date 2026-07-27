@@ -1,8 +1,7 @@
-import React from 'react';
+import React from "react";
 import {
   Control,
   FieldValues,
-  FieldArray as FieldArrayValue,
   ArrayPath,
   FieldArrayWithId,
   UseFieldArrayAppend,
@@ -13,15 +12,18 @@ import {
   UseFieldArrayInsert,
   UseFieldArrayUpdate,
   UseFieldArrayReplace,
-} from 'react-hook-form';
+} from "react-hook-form";
 
 /**
  * Helper type for FieldArray render props.
  * Ensures proper type inference for generic field types.
  */
-type FieldArrayRenderProps<TFieldValues extends FieldValues = FieldValues, TName extends ArrayPath<TFieldValues> = ArrayPath<TFieldValues>> = {
+type FieldArrayRenderProps<
+  TFieldValues extends FieldValues = FieldValues,
+  TName extends ArrayPath<TFieldValues> = ArrayPath<TFieldValues>,
+> = {
   /** Array of field items with unique IDs */
-  fields: FieldArrayWithId<TFieldValues, TName, 'id'>[];
+  fields: FieldArrayWithId<TFieldValues, TName, "id">[];
   /** Add item to end of array */
   append: UseFieldArrayAppend<TFieldValues, TName>;
   /** Add item to beginning of array */
@@ -70,12 +72,14 @@ export default interface IFieldArrayProps<
    * Render function with field array utilities.
    * Provides access to fields array and manipulation methods.
    */
-  children: (props: FieldArrayRenderProps<TFieldValues, TName>) => React.ReactNode;
+  children: (
+    props: FieldArrayRenderProps<TFieldValues, TName>,
+  ) => React.ReactNode;
 
   /**
    * Default value for new items when using append/prepend.
    */
-  defaultValue?: FieldArrayValue<TFieldValues, TName>;
+  defaultValue?: Parameters<UseFieldArrayAppend<TFieldValues, TName>>[0];
 
   /**
    * Minimum number of items (validation).

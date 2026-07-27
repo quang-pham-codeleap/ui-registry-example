@@ -1,0 +1,46 @@
+/* JTL theme — primitives
+ *
+ * Raw, mode-agnostic scales that the semantic tokens (globals.css) and the
+ * typography tokens (tokens/typography.css) resolve against: border radius,
+ * font size, line height, font weight, and letter spacing.
+ */
+@layer base {
+    :root {
+        /* ── Border radius ────────────────────────────────────────────── */
+        --radius-rounded-sm: 0.125rem; /* 2px */
+        --radius-rounded-md: 0.375rem; /* 6px */
+        --radius-rounded-lg: 0.5rem; /* 8px */
+        --radius-rounded-xl: 0.75rem; /* 12px */
+        --radius-rounded-full: 9999px;
+
+        /* ── Font size ────────────────────────────────────────────────── */
+        --font-size-text-xs: 0.75rem; /* 12px */
+        --font-size-text-sm: 0.875rem; /* 14px */
+        --font-size-text-base: 1rem; /* 16px */
+        --font-size-text-lg: 1.125rem; /* 18px */
+        --font-size-text-xl: 1.25rem; /* 20px */
+        --font-size-text-2xl: 1.5rem; /* 24px */
+        --font-size-text-3xl: 1.875rem; /* 30px */
+        --font-size-text-4xl: 2.25rem; /* 36px */
+
+        /* ── Line height ──────────────────────────────────────────────── */
+        --font-line-height-leading-4: 1rem; /* 16px */
+        --font-line-height-leading-5: 1.25rem; /* 20px */
+        --font-line-height-leading-6: 1.5rem; /* 24px */
+        --font-line-height-leading-7: 1.75rem; /* 28px */
+        --font-line-height-leading-8: 2rem; /* 32px */
+        --font-line-height-leading-9: 2.25rem; /* 36px */
+        --font-line-height-leading-10: 2.5rem; /* 40px */
+
+        /* ── Font weight ──────────────────────────────────────────────── */
+        --font-weight-normal: 400;
+        --font-weight-medium: 500;
+        --font-weight-semibold: 600;
+        --font-weight-bold: 700;
+        --font-weight-extrabold: 800;
+
+        /* ── Letter spacing ───────────────────────────────────────────── */
+        --font-letter-spacing-tight: -0.025em;
+        --font-letter-spacing-normal: 0em;
+    }
+}

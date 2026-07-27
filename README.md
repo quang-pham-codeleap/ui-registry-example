@@ -10,13 +10,13 @@ The goal of this sample is to show that the JTL design system can be shipped and
 
 ## JTL vs Shadcn
 
-| Topic | JTL component library | Shadcn UI |
-| --- | --- | --- |
-| Distribution | Published through the shadcn registry | Installed from shadcn registry or added manually |
-| Design language | JTL-branded components and patterns | Neutral starter primitives |
-| Purpose | Production-ready internal component system | Flexible base for building your own system |
-| Import style | Consistent library-owned components | Copy-into-project component model |
-| Best fit | Teams that want a shared UI standard | Teams that want maximum control over component source |
+| Topic           | JTL component library                      | Shadcn UI                                             |
+| --------------- | ------------------------------------------ | ----------------------------------------------------- |
+| Distribution    | Published through the shadcn registry      | Installed from shadcn registry or added manually      |
+| Design language | JTL-branded components and patterns        | Neutral starter primitives                            |
+| Purpose         | Production-ready internal component system | Flexible base for building your own system            |
+| Import style    | Consistent library-owned components        | Copy-into-project component model                     |
+| Best fit        | Teams that want a shared UI standard       | Teams that want maximum control over component source |
 
 ## What You Can Explore
 
@@ -29,8 +29,8 @@ The goal of this sample is to show that the JTL design system can be shipped and
 Install dependencies and start the app with the usual Vite workflow:
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 ## GitHub Pages Deployment
